@@ -1,0 +1,59 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio temporary files, build results, and
+# user-generated files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# Auto generated files
+*.g.cs
+*.g.i.cs
+*.generated.cs
+
+# Logs
+*.log
+
+# NuGet
+*.nupkg
+# Packages folder can be ignored because of Package Restore
+packages/
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# DotCover
+*.dotCover
+
+# Others
+*.dbmdl
+*.pdb
+*.cache
+*.ilk
+*.idb
+*.class
+*.pyc
+*.pidb
+*.pyo
+*.swp
+*.swo
+*.DS_Store
+
+# Publish output
+publish/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
