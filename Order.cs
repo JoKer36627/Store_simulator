@@ -30,5 +30,15 @@ namespace Store_simulator
         {
             return $"Order from {OrderDate}: Total {TotalAmount:C}, Items: {Products.Count}";
         }
+
+        enum OrderStatus
+        {
+            Created;
+            Paid;
+            Compleated;
+            Cancelled;
+        }
+
+
     }
 }
