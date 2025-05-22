@@ -47,5 +47,10 @@ namespace Store_simulator
         {
             return $"{Name} - {Category}: {Price:C} (Quantity: {Quantity})";
         }
+
+        public Product Clone()
+        {
+            return new Product(Name, Price, Quantity, Category);
+        }
     }
 }

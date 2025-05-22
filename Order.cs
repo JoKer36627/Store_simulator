@@ -11,7 +11,7 @@ namespace Store_simulator
     {
         Created,
         Paid,
-        Compleated,
+        Completed,
         Cancelled
     }
     class Order
@@ -55,7 +55,7 @@ namespace Store_simulator
             }
 
 
-            if (currentStatus == OrderStatus.Compleated && newStatus == OrderStatus.Created)
+            if (currentStatus == OrderStatus.Completed && newStatus == OrderStatus.Created)
             {
                 Console.WriteLine("You can't change status from Completed back to Created.");
                 return;
@@ -81,7 +81,7 @@ namespace Store_simulator
                 case OrderStatus.Paid:
                     Console.WriteLine("Order Paid.");
                     break;
-                case OrderStatus.Compleated:
+                case OrderStatus.Completed:
                     Console.WriteLine("Order completed.");
                     break;
                 case OrderStatus.Cancelled:

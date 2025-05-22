@@ -33,6 +33,8 @@ namespace Store_simulator
         public void MakeOrder(Customer customer, List<Product> products)
         {
 
+
+
             if (customer == null)
             {
                 Console.WriteLine("Customer not found.");
@@ -68,16 +70,24 @@ namespace Store_simulator
                 return;
             }
 
-            if (customer.Balance >= products.Sum(p => p.Price * p.Quantity))
+
+            // minus balance from customer
+            customer.Balance -= totalBalance;
+
+            // update quantity of products in store
+            foreach (var product in products)
             {
-                Order order = new Order(products);
+                var storeProduct = GetProductByName(product.Name);
+
+                storeProduct.UpdateQuantity(-product.Quantity);
+            }
+
+            // clone products before the order
+            List<Product> orderProducts = products.Select(p => p.Clone()).ToList();
+
+            Order order = new Order(products);
                 Orders.Add(order);
                 customer.AddOrder(order);
-            }
-            else
-            {
-                Console.WriteLine("Insufficient balance.");
-            }
 
         }
         public Product GetProductByName(string name)
