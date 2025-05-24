@@ -4,57 +4,55 @@
     {
         static void Main(string[] args)
         {
-            Store store = new Store();
 
-            // Додавання тестових даних
-            store.AddProduct(new Product("Apple", 1.5m, 20, "Fruits"));
-            store.AddProduct(new Product("Milk", 3.2m, 10, "Dairy"));
-            store.AddCustomer(new Customer("John", 50));
+            bool exit = false;
 
-            while (true)
+            while (!exit)
             {
-                Console.WriteLine("\n1. List products\n2. List customers\n3. Make order\n4. Exit");
-                Console.Write("Choose action: ");
-                var input = Console.ReadLine();
+                Console.Clear();
+                Console.WriteLine("DEBUG: Start menu");
+                Console.WriteLine("Welcome to the Store Simulator!");
+                Console.WriteLine("1. Add Product");
+                Console.WriteLine("2. Create Order");
+                Console.WriteLine("3. Show All Products");
+                Console.WriteLine("4. Show All Orders");
+                Console.WriteLine("5. Exit");
 
-                switch (input)
+
+                string choice = Console.ReadLine();
+                switch (choice)
                 {
                     case "1":
-                        store.ListAllProducts();
+                        // Logic to create a new store
+                        Console.WriteLine("Enter product name: ");
+                        string name = Console.ReadLine();
+
+                        Console.Write("Enter product price: ");
+                        decimal price = decimal.Parse(Console.ReadLine());
+
+                        Console.Write("Enter product quantity: ");
+                        int quantity = int.Parse(Console.ReadLine());
                         break;
                     case "2":
-                        store.ListAllCustomers();
+                        // Logic to add products to the store
                         break;
                     case "3":
-                        Console.Write("Enter customer name: ");
-                        string name = Console.ReadLine();
-                        var customer = store.Customers.FirstOrDefault(c => c.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
-                        if (customer == null)
-                        {
-                            Console.WriteLine("Customer not found.");
-                            break;
-                        }
-
-                        Console.Write("Enter product name: ");
-                        string productName = Console.ReadLine();
-                        Console.Write("Enter quantity: ");
-                        int qty = int.Parse(Console.ReadLine());
-
-                        var product = store.GetProductByName(productName);
-                        if (product == null)
-                            break;
-
-                        var productList = new List<Product>
-                {
-                    new Product(product.Name, product.Price, qty, product.Category)
-                };
-
-                        store.MakeOrder(customer, productList);
+                        // Logic to create a customer
                         break;
                     case "4":
-                        return;
+                        // Logic to list all products
+                        break;
+                    case "5":
+                        exit = true;
+                        // Logic to place an order
+                        break;
+                    default:
+                        Console.WriteLine("Invalid choice, please try again.");
+                        break;
                 }
             }
+
+
         }
     }
 }

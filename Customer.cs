@@ -10,8 +10,8 @@ namespace Store_simulator
     {
         public string Name { get; set; }
         public decimal Balance { get; set; }
-        public List<Order> Orders { get; set; }
-
+        public List<Order> Orders { get; private set; }
+        -=
         public Customer(string name, decimal balance)
         {
             Name = name;
