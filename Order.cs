@@ -22,11 +22,14 @@ namespace Store_simulator
 
         public OrderStatus Status { get; private set; }
 
-        public Order(List<Product> products)
+        public Customer Customer { get; private set; }
+
+        public Order(List<Product> products, Customer customer)
         {
             Products = products ?? new List<Product>();
             OrderDate = DateTime.Now;
             Status = OrderStatus.Created;
+            Customer = customer;
         }
 
         public decimal TotalAmount

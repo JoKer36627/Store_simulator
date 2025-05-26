@@ -8,6 +8,7 @@ namespace Store_simulator
 {
     class Product
     {
+        public Guid Id { get; }
         public string Name { get; set; }
         public decimal Price { get; set; }
         public int Quantity { get; set; }
@@ -15,6 +16,7 @@ namespace Store_simulator
 
         public Product(string name, decimal price, int quantity, string category)
         {
+            Id = Guid.NewGuid();
             Name = name;
             Price = price;
             Quantity = quantity;

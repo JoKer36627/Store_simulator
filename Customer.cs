@@ -8,12 +8,14 @@ namespace Store_simulator
 {
     class Customer
     {
+        public Guid Id { get; }
         public string Name { get; set; }
         public decimal Balance { get; set; }
         public List<Order> Orders { get; private set; }
-        -=
+        
         public Customer(string name, decimal balance)
         {
+            Id = Guid.NewGuid();
             Name = name;
             Balance = balance;
             Orders = new List<Order>();
@@ -22,12 +24,11 @@ namespace Store_simulator
         public void AddOrder(Order order)
         {
             Orders.Add(order);
-            Balance -= order.TotalAmount;
         }
 
         public override string ToString()
         {
-            return $"{Name} - Balance: {Balance:C}, Orders count: {Orders.Count}";
+            return $"ID: {Id}, {Name} - Balance: {Balance:C}, Orders count: {Orders.Count}";
         }
 
     }

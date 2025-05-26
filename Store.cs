@@ -33,8 +33,6 @@ namespace Store_simulator
         public void MakeOrder(Customer customer, List<Product> products)
         {
 
-
-
             if (customer == null)
             {
                 Console.WriteLine("Customer not found.");
@@ -74,18 +72,10 @@ namespace Store_simulator
             // minus balance from customer
             customer.Balance -= totalBalance;
 
-            // update quantity of products in store
-            foreach (var product in products)
-            {
-                var storeProduct = GetProductByName(product.Name);
-
-                storeProduct.UpdateQuantity(-product.Quantity);
-            }
-
             // clone products before the order
             List<Product> orderProducts = products.Select(p => p.Clone()).ToList();
 
-            Order order = new Order(products);
+            Order order = new Order(products, customer);
                 Orders.Add(order);
                 customer.AddOrder(order);
 
@@ -103,6 +93,16 @@ namespace Store_simulator
                 return null;
             }
         }
+        public Customer GetCustomerById(Guid id)
+        {
+            return Customers.FirstOrDefault(c => c.Id == id);
+        }
+
+        public Product GetProductById(Guid id)
+        {
+            return Products.FirstOrDefault(p => p.Id == id);
+        }
+
 
 
         public void ListAllProducts()
@@ -113,11 +113,12 @@ namespace Store_simulator
                 return;
             }
 
-            Console.WriteLine("Available products");
+            Console.WriteLine("Available products:");
 
             foreach(var product in Products)
             {
-                Console.WriteLine($"Name: {product.Name}, Price: {product.Price}, Quantity: {product.Quantity}");
+                Console.WriteLine($"Name: {product.Name}, Price: {product.Price}, Quantity: {product.Quantity}, Category: {product.Category}"
+                    );
             }
         }
 
@@ -129,13 +130,50 @@ namespace Store_simulator
                 return;
             }
 
-            Console.WriteLine("Available customers");
-
             foreach (var customer in Customers)
             {
-                Console.WriteLine($"Name: {customer.Name}, Balance: {customer.Balance}");
+                Console.WriteLine($"Id: {customer.Id}, Name: {customer.Name}, Balance: {customer.Balance}");
+            }
+
+            Console.WriteLine("Available customers");
+        }
+
+        public void ListAllOrders()
+        {
+            if(Orders.Count == 0)
+            {
+                Console.WriteLine("No orders available.");
+                return;
+            }
+
+            Console.WriteLine("All Orders:");
+            foreach (var order in Orders)
+            {
+                Console.WriteLine($"Customer: {order.Customer.Name}");
+                Console.WriteLine("Products in order:");
+                foreach(var product in order.Products)
+                {
+                    Console.WriteLine($" - {product.Name} ({product.Category}): {product.Price:C} x {product.Quantity}");
+                }
+
+                Console.WriteLine($"Total: {order.TotalAmount:C}");
+                Console.WriteLine(new string ('-', 40));
+
             }
         }
 
-    }
+        public void InitializeTestData(Store store)
+        {
+            var c1 = new Customer("Alice", 1000);  // Id генерується автоматично
+            var c2 = new Customer("David", 80);
+            var c3 = new Customer("Alex", 570);
+
+            store.AddCustomer(c1);
+            store.AddCustomer(c2);
+            store.AddCustomer(c3);
+        }
+
+
 }
+}
+
