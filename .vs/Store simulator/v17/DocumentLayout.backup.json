@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,21 +34,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Store.cs",
               "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\Store.cs",
               "RelativeDocumentMoniker": "Store.cs",
-              "ToolTip": "D:\\Work\\C# proj\\Store simulator\\Store.cs*",
-              "RelativeToolTip": "Store.cs*",
-              "ViewState": "AgIAAA4AAAAAAAAAAADwvycAAABVAAAAAAAAAA==",
+              "ToolTip": "D:\\Work\\C# proj\\Store simulator\\Store.cs",
+              "RelativeToolTip": "Store.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAUwB4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T21:59:40.98Z",
               "EditorCaption": ""
@@ -93,13 +97,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\Product.cs",
               "RelativeDocumentMoniker": "Product.cs",
               "ToolTip": "D:\\Work\\C# proj\\Store simulator\\Product.cs",
               "RelativeToolTip": "Product.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wCcAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T20:53:27.535Z",
               "EditorCaption": ""
@@ -110,8 +114,8 @@
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Work\\C# proj\\Store simulator\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
+              "ToolTip": "D:\\Work\\C# proj\\Store simulator\\Program.cs",
+              "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAGkAAAAAAAAAAAAqwHgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T20:53:05.966Z",

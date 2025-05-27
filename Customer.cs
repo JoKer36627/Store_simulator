@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 
 namespace Store_simulator
 {
@@ -11,8 +9,10 @@ namespace Store_simulator
         public Guid Id { get; }
         public string Name { get; set; }
         public decimal Balance { get; set; }
+
+        [JsonIgnore]
         public List<Order> Orders { get; private set; }
-        
+
         public Customer(string name, decimal balance)
         {
             Id = Guid.NewGuid();
@@ -30,6 +30,5 @@ namespace Store_simulator
         {
             return $"ID: {Id}, {Name} - Balance: {Balance:C}, Orders count: {Orders.Count}";
         }
-
     }
 }

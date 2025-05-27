@@ -6,9 +6,14 @@ namespace Store_simulator
     {
         static void Main(string[] args)
         {
+
+            StorageManager.InitializeStorage();
             Store store = new Store();
 
             store.InitializeTestData(store);
+            store.SaveAll();
+
+
 
             bool exit = false;
 
@@ -20,7 +25,8 @@ namespace Store_simulator
                 Console.WriteLine("2. Create Order");
                 Console.WriteLine("3. Show All Products");
                 Console.WriteLine("4. Show All Orders");
-                Console.WriteLine("5. Exit");
+                Console.WriteLine("5. Cancel Order");
+                Console.WriteLine("6. Exit");
 
                 string choice = Console.ReadLine();
 
@@ -54,6 +60,7 @@ namespace Store_simulator
 
                         Product newProduct = new Product(productName, price, quantity, category);
                         store.AddProduct(newProduct);
+                        store.SaveAll();
 
                         Console.WriteLine("Product added successfully!");
                         Console.WriteLine("Press any key to continue...");
@@ -121,14 +128,13 @@ namespace Store_simulator
 
                             Console.WriteLine($"{quantity} x {product.Name} added to cart. Remaining: {product.Quantity}");
 
-
-                            selectedProducts.Add(new Product(product.Name, product.Price, quantity, product.Category));
                             Console.WriteLine($"{product.Name} x {quantity} added to order.");
                         }
 
                         if (selectedProducts.Count > 0)
                         {
                             store.MakeOrder(customer, selectedProducts);
+                            store.SaveAll();
                         }
                         else
                         {
@@ -160,6 +166,30 @@ namespace Store_simulator
                         break;
 
                     case "5":
+                        // Logic to cancel an order
+                        store.ListAllOrders();
+
+                        Console.WriteLine("Enter index of order to cancel:");
+
+                        if (int.TryParse(Console.ReadLine(), out int indexToCancel) &&
+                            indexToCancel >= 0 && indexToCancel < store.Orders.Count)
+                        {
+                            var orderToCancel = store.Orders[indexToCancel];
+                            store.CancelOrder(orderToCancel);
+                            store.SaveAll();
+
+                            Console.WriteLine("Order cancelled successfully.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid index.");
+                        }
+
+                        Console.WriteLine("Press any key to continue...");
+                        Console.ReadKey();
+                        break;
+
+                    case "6":
                         exit = true;
                         break;
 

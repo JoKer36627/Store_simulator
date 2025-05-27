@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Store simulator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d999618e9e9eec912d468f681b5a25c94065a4c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da00517774091f6c3d9f096db3d6e4739c146d0e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Store simulator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Store simulator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

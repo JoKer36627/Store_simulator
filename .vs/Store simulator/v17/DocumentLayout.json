@@ -7,12 +7,20 @@
       "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\storagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:storagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,64 +46,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "StorageManager.cs",
+              "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\StorageManager.cs",
+              "RelativeDocumentMoniker": "StorageManager.cs",
+              "ToolTip": "D:\\Work\\C# proj\\Store simulator\\StorageManager.cs",
+              "RelativeToolTip": "StorageManager.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAADwv0IAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T17:59:21.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Store.cs",
               "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\Store.cs",
               "RelativeDocumentMoniker": "Store.cs",
               "ToolTip": "D:\\Work\\C# proj\\Store simulator\\Store.cs",
               "RelativeToolTip": "Store.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAADwvycAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAqwHIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T21:59:40.98Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": ".gitignore",
               "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
               "ToolTip": "D:\\Work\\C# proj\\Store simulator\\.gitignore",
               "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-19T21:46:34.461Z"
+              "WhenOpened": "2025-05-19T21:46:34.461Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\Order.cs",
               "RelativeDocumentMoniker": "Order.cs",
               "ToolTip": "D:\\Work\\C# proj\\Store simulator\\Order.cs",
               "RelativeToolTip": "Order.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAuwCAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T20:53:59.676Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Customer.cs",
               "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\Customer.cs",
               "RelativeDocumentMoniker": "Customer.cs",
               "ToolTip": "D:\\Work\\C# proj\\Store simulator\\Customer.cs",
               "RelativeToolTip": "Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T20:53:48.215Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\Product.cs",
               "RelativeDocumentMoniker": "Product.cs",
               "ToolTip": "D:\\Work\\C# proj\\Store simulator\\Product.cs",
               "RelativeToolTip": "Product.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wCcAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAswDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T20:53:27.535Z",
               "EditorCaption": ""
@@ -112,7 +130,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Work\\C# proj\\Store simulator\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAqwHgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAIwLYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T20:53:05.966Z",
               "EditorCaption": ""

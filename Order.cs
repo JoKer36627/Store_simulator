@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Store_simulator
 {
-
     enum OrderStatus
     {
         Created,
@@ -14,29 +11,28 @@ namespace Store_simulator
         Completed,
         Cancelled
     }
+
     class Order
     {
         public List<Product> Products { get; private set; }
-
         public DateTime OrderDate { get; private set; }
-
         public OrderStatus Status { get; private set; }
 
-        public Customer Customer { get; private set; }
+        public Guid CustomerId { get; private set; } 
 
-        public Order(List<Product> products, Customer customer)
+        public Order(List<Product> products, Guid customerId)
         {
             Products = products ?? new List<Product>();
             OrderDate = DateTime.Now;
             Status = OrderStatus.Created;
-            Customer = customer;
+            CustomerId = customerId;
         }
 
         public decimal TotalAmount
         {
             get
             {
-                return Products.Sum(p=> p.Price * p.Quantity);
+                return Products.Sum(p => p.Price * p.Quantity);
             }
         }
 
@@ -47,16 +43,13 @@ namespace Store_simulator
 
         public void ChangeStatus(OrderStatus newStatus)
         {
-
             OrderStatus currentStatus = Status;
 
-            // Check if the new status is valid
             if (currentStatus == newStatus)
             {
                 Console.WriteLine("Status is already " + newStatus);
                 return;
             }
-
 
             if (currentStatus == OrderStatus.Completed && newStatus == OrderStatus.Created)
             {
@@ -66,21 +59,17 @@ namespace Store_simulator
 
             if (currentStatus == OrderStatus.Cancelled && newStatus == OrderStatus.Paid)
             {
-                Console.WriteLine("You can't change status from Cancceled back to Paid.");
+                Console.WriteLine("You can't change status from Cancelled back to Paid.");
                 return;
             }
 
-
-
             Status = newStatus;
-
 
             switch (newStatus)
             {
                 case OrderStatus.Created:
                     Console.WriteLine("Order created.");
                     break;
-
                 case OrderStatus.Paid:
                     Console.WriteLine("Order Paid.");
                     break;
@@ -91,11 +80,6 @@ namespace Store_simulator
                     Console.WriteLine("Order cancelled.");
                     break;
             }
-
-
-            
         }
-
-
     }
 }

@@ -9,15 +9,25 @@ namespace Store_simulator
 {
     class Store
     {
+        private StorageManager storageManager;
         public List<Product> Products { get; private set; }
         public List<Customer> Customers { get; private set; }
         public List<Order> Orders { get; private set; }
 
         public Store()
         {
-            Products = new List<Product>();
-            Customers = new List<Customer>();
-            Orders = new List<Order>();
+            storageManager = new StorageManager();
+
+            Products = storageManager.LoadData<List<Product>>("products.json") ?? new List<Product>();
+            Customers = storageManager.LoadData<List<Customer>>("customers.json") ?? new List<Customer>();
+            Orders = storageManager.LoadData<List<Order>>("orders.json") ?? new List<Order>();
+        }
+
+        public void SaveAll()
+        {
+            storageManager.SaveData("products.json", Products);
+            storageManager.SaveData("customers.json", Customers);
+            storageManager.SaveData("orders.json", Orders);
         }
 
         public void AddProduct(Product product)
@@ -75,11 +85,56 @@ namespace Store_simulator
             // clone products before the order
             List<Product> orderProducts = products.Select(p => p.Clone()).ToList();
 
-            Order order = new Order(products, customer);
+            Order order = new Order(orderProducts, customer.Id);
                 Orders.Add(order);
                 customer.AddOrder(order);
 
         }
+
+        public void CancelOrder(Order order)
+        {
+            if (order.Status == OrderStatus.Completed)
+            {
+                Console.WriteLine("Completed orders cannot be cancelled.");
+                return;
+            }
+
+            if (order.Status == OrderStatus.Cancelled)
+            {
+                Console.WriteLine("Order is already cancelled.");
+                return;
+            }
+
+            var customer = GetCustomerById(order.CustomerId);
+            if (customer == null)
+            {
+                Console.WriteLine("Customer not found.");
+                return;
+            }
+
+            // refund customer
+            customer.Balance += order.TotalAmount;
+
+            // return products to store
+            foreach (var orderedProduct in order.Products)
+            {
+                var storeProduct = GetProductByName(orderedProduct.Name);
+                if (storeProduct != null)
+                {
+                    storeProduct.Quantity += orderedProduct.Quantity;
+                }
+                else
+                {
+                    // Продукт міг бути видалений, але його треба повернути
+                    Products.Add(orderedProduct.Clone());
+                }
+            }
+
+            // Change status to Cancelled
+            order.ChangeStatus(OrderStatus.Cancelled);
+        }
+
+
         public Product GetProductByName(string name)
         {
             var product = Products.FirstOrDefault(p => p.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
@@ -140,7 +195,7 @@ namespace Store_simulator
 
         public void ListAllOrders()
         {
-            if(Orders.Count == 0)
+            if (Orders.Count == 0)
             {
                 Console.WriteLine("No orders available.");
                 return;
@@ -149,18 +204,21 @@ namespace Store_simulator
             Console.WriteLine("All Orders:");
             foreach (var order in Orders)
             {
-                Console.WriteLine($"Customer: {order.Customer.Name}");
+                var customer = GetCustomerById(order.CustomerId);
+                string customerName = customer != null ? customer.Name : "Unknown Customer";
+
+                Console.WriteLine($"Customer: {customerName}");
                 Console.WriteLine("Products in order:");
-                foreach(var product in order.Products)
+                foreach (var product in order.Products)
                 {
                     Console.WriteLine($" - {product.Name} ({product.Category}): {product.Price:C} x {product.Quantity}");
                 }
 
                 Console.WriteLine($"Total: {order.TotalAmount:C}");
-                Console.WriteLine(new string ('-', 40));
-
+                Console.WriteLine(new string('-', 40));
             }
         }
+     
 
         public void InitializeTestData(Store store)
         {
