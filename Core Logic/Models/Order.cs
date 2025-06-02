@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Store_simulator
+namespace Store_simulator.Data
 {
     enum OrderStatus
     {

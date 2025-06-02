@@ -1,4 +1,6 @@
-﻿using System.Diagnostics.Metrics;
+﻿using Store_simulator.Data;
+using Store_simulator.DataService.Implementations;
+using System.Diagnostics.Metrics;
 
 namespace Store_simulator
 {

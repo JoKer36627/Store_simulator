@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Store_simulator
+namespace Store_simulator.Data
 {
-    class Product
+    public class Product
     {
         public Guid Id { get; }
         public string Name { get; set; }

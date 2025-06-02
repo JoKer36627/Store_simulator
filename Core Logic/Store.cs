@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Store_simulator.Core_Logic.Services;
+using Store_simulator.Data;
+using Store_simulator.DataService.Implementations;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -13,6 +16,8 @@ namespace Store_simulator
         public List<Product> Products { get; private set; }
         public List<Customer> Customers { get; private set; }
         public List<Order> Orders { get; private set; }
+        private OrderService _orderService;
+        private ProductService _productService;
 
         public Store()
         {
@@ -21,6 +26,8 @@ namespace Store_simulator
             Products = storageManager.LoadData<List<Product>>("products.json") ?? new List<Product>();
             Customers = storageManager.LoadData<List<Customer>>("customers.json") ?? new List<Customer>();
             Orders = storageManager.LoadData<List<Order>>("orders.json") ?? new List<Order>();
+            _orderService = new OrderService();
+            _productService = new ProductService();
         }
 
         public void SaveAll()
@@ -91,7 +98,7 @@ namespace Store_simulator
 
         }
 
-        public void CancelOrder(Order order)
+        public void CancelOrder(Order order) 
         {
             if (order.Status == OrderStatus.Completed)
             {

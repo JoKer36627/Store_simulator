@@ -7,7 +7,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.IO;
 
-namespace Store_simulator
+namespace Store_simulator.DataService.Implementations
 {
     class StorageManager
     {
@@ -54,7 +54,7 @@ namespace Store_simulator
 
             if (!File.Exists(filePath))
             {
-                return default(T);
+                return default;
             }
 
             string jsonString = File.ReadAllText(filePath);

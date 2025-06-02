@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace Store_simulator
+namespace Store_simulator.Data
 {
     class Customer
     {
