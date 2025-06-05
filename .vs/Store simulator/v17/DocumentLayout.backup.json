@@ -3,44 +3,56 @@
   "WorkspaceRootPath": "D:\\Work\\C# proj\\Store simulator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\ui\\consoleui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:ui\\consoleui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\core logic\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:core logic\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\core logic\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:core logic\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\dataservice\\interfaces\\istoragemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:dataservice\\interfaces\\istoragemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\dataservice\\implementations\\storagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:dataservice\\implementations\\storagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\core logic\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:core logic\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\core logic\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:core logic\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Work\\C# proj\\Store simulator\\bin\\Debug\\net8.0\\Data\\customers.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\net8.0\\Data\\customers.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Work\\C# proj\\Store simulator\\bin\\Debug\\net8.0\\Data\\orders.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\net8.0\\Data\\orders.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\core logic\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:core logic\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\core logic\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:core logic\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Work\\C# proj\\Store simulator\\bin\\Debug\\net8.0\\Data\\customers.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\net8.0\\Data\\customers.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Work\\C# proj\\Store simulator\\bin\\Debug\\net8.0\\Data\\products.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\net8.0\\Data\\products.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Work\\C# proj\\Store simulator\\bin\\Debug\\net8.0\\Store simulator.runtimeconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\net8.0\\Store simulator.runtimeconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\dataservice\\implementations\\storagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:dataservice\\implementations\\storagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\core logic\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:core logic\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\core logic\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:core logic\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\ui\\consoleui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:ui\\consoleui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|d:\\work\\c# proj\\store simulator\\dataservice\\interfaces\\istoragemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7C32DEF-6473-41E0-975F-C41697E2A7BC}|Store simulator.csproj|solutionrelative:dataservice\\interfaces\\istoragemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,11 +62,51 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "Store simulator.runtimeconfig.json",
+              "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\bin\\Debug\\net8.0\\Store simulator.runtimeconfig.json",
+              "RelativeDocumentMoniker": "bin\\Debug\\net8.0\\Store simulator.runtimeconfig.json",
+              "ToolTip": "D:\\Work\\C# proj\\Store simulator\\bin\\Debug\\net8.0\\Store simulator.runtimeconfig.json",
+              "RelativeToolTip": "bin\\Debug\\net8.0\\Store simulator.runtimeconfig.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-03T17:54:31.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Work\\C# proj\\Store simulator\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAowJgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T13:08:27.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\Core Logic\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Core Logic\\Models\\Product.cs",
+              "ToolTip": "D:\\Work\\C# proj\\Store simulator\\Core Logic\\Models\\Product.cs",
+              "RelativeToolTip": "Core Logic\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T12:54:40.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ConsoleUI.cs",
               "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\UI\\ConsoleUI.cs",
               "RelativeDocumentMoniker": "UI\\ConsoleUI.cs",
@@ -62,25 +114,23 @@
               "RelativeToolTip": "UI\\ConsoleUI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T10:26:55.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T10:26:55.84Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Store.cs",
               "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\Core Logic\\Store.cs",
               "RelativeDocumentMoniker": "Core Logic\\Store.cs",
               "ToolTip": "D:\\Work\\C# proj\\Store simulator\\Core Logic\\Store.cs",
               "RelativeToolTip": "Core Logic\\Store.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAAAF8AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAcwE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T11:00:11.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T11:00:11.006Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "IStorageManager.cs",
               "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\DataService\\Interfaces\\IStorageManager.cs",
               "RelativeDocumentMoniker": "DataService\\Interfaces\\IStorageManager.cs",
@@ -88,93 +138,84 @@
               "RelativeToolTip": "DataService\\Interfaces\\IStorageManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T10:26:40.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T10:26:40.197Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "StorageManager.cs",
               "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\DataService\\Implementations\\StorageManager.cs",
               "RelativeDocumentMoniker": "DataService\\Implementations\\StorageManager.cs",
               "ToolTip": "D:\\Work\\C# proj\\Store simulator\\DataService\\Implementations\\StorageManager.cs",
               "RelativeToolTip": "DataService\\Implementations\\StorageManager.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAuwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T10:26:18.24Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "WhenOpened": "2025-05-29T10:26:18.24Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "OrderService.cs",
               "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\Core Logic\\Services\\OrderService.cs",
               "RelativeDocumentMoniker": "Core Logic\\Services\\OrderService.cs",
               "ToolTip": "D:\\Work\\C# proj\\Store simulator\\Core Logic\\Services\\OrderService.cs",
               "RelativeToolTip": "Core Logic\\Services\\OrderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAIwIgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-29T10:25:43.299Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "ProductService.cs",
               "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\Core Logic\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "Core Logic\\Services\\ProductService.cs",
               "ToolTip": "D:\\Work\\C# proj\\Store simulator\\Core Logic\\Services\\ProductService.cs",
               "RelativeToolTip": "Core Logic\\Services\\ProductService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwCUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T10:25:28.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T10:25:28.756Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "OrderItem.cs",
               "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\Core Logic\\Models\\OrderItem.cs",
               "RelativeDocumentMoniker": "Core Logic\\Models\\OrderItem.cs",
               "ToolTip": "D:\\Work\\C# proj\\Store simulator\\Core Logic\\Models\\OrderItem.cs",
               "RelativeToolTip": "Core Logic\\Models\\OrderItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T10:24:57.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T10:24:57.259Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "customers.json",
               "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\bin\\Debug\\net8.0\\Data\\customers.json",
               "RelativeDocumentMoniker": "bin\\Debug\\net8.0\\Data\\customers.json",
               "ToolTip": "D:\\Work\\C# proj\\Store simulator\\bin\\Debug\\net8.0\\Data\\customers.json",
               "RelativeToolTip": "bin\\Debug\\net8.0\\Data\\customers.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-27T19:01:07.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T19:01:07.235Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "orders.json",
               "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\bin\\Debug\\net8.0\\Data\\orders.json",
               "RelativeDocumentMoniker": "bin\\Debug\\net8.0\\Data\\orders.json",
               "ToolTip": "D:\\Work\\C# proj\\Store simulator\\bin\\Debug\\net8.0\\Data\\orders.json",
               "RelativeToolTip": "bin\\Debug\\net8.0\\Data\\orders.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-05-27T19:00:39.484Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "products.json",
               "DocumentMoniker": "D:\\Work\\C# proj\\Store simulator\\bin\\Debug\\net8.0\\Data\\products.json",
               "RelativeDocumentMoniker": "bin\\Debug\\net8.0\\Data\\products.json",
