@@ -48,7 +48,6 @@ namespace Store_simulator.UI
     {
         input = ReadInput(prompt)?.Trim();
 
-        // Умова: лише літери та пробіли між словами
         bool isValid = 
             !string.IsNullOrWhiteSpace(input) &&
             input.All(c => char.IsLetter(c) || c == ' ') &&

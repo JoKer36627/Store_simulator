@@ -41,7 +41,7 @@ namespace Store_simulator.Data
 
             if (Quantity < 0)
             {
-                Quantity = 0; // Reset to zero if negative
+                Quantity = 0;
                 Console.WriteLine("Invalid quantity. Quantity cannot be negative.");
             }
         }

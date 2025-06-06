@@ -72,7 +72,6 @@ namespace Store_simulator.Core_Logic.Services
 
             customer.Balance -= totalBalance;
 
-            // create order with cloned products
             List<Product> orderProducts = items.Select(i =>
             {
                 var clone = i.Product.Clone();
@@ -109,10 +108,8 @@ namespace Store_simulator.Core_Logic.Services
                 return;
             }
 
-            // refund customer
             customer.Balance += order.TotalAmount;
 
-            // return products to store
             foreach (var orderedProduct in order.Products)
             {
                 var storeProduct = GetProductByName(orderedProduct.Name);
@@ -122,12 +119,10 @@ namespace Store_simulator.Core_Logic.Services
                 }
                 else
                 {
-                    // Продукт міг бути видалений, але його треба повернути
                     _products.Add(orderedProduct.Clone());
                 }
             }
 
-            // Change status to Cancelled
             order.ChangeStatus(OrderStatus.Cancelled);
 
             _orders.Remove(order);

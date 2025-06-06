@@ -29,7 +29,7 @@ namespace Store_simulator.DataService.Implementations
         {
             if (!File.Exists(filePath))
             {
-                File.WriteAllText(filePath, "[]"); // Порожній масив JSON
+                File.WriteAllText(filePath, "[]"); 
             }
         }
 

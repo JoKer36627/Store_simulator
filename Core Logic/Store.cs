@@ -108,7 +108,7 @@ namespace Store_simulator
             if (store.Customers.Count == 0)
             {
 
-                var c1 = new Customer("Alice", 1000);  // Id generated automatically
+                var c1 = new Customer("Alice", 1000);
                 var c2 = new Customer("David", 80);
                 var c3 = new Customer("Alex", 570);
 
