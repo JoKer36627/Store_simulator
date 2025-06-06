@@ -47,7 +47,7 @@ namespace Store_simulator.Data
         }
         public override string ToString()
         {
-            return $"{Name} - {Category}: {Price:C} (Quantity: {Quantity})";
+            return $"{Name} - {Category}: {Price:USD} (Quantity: {Quantity})";
         }
 
         public Product Clone()

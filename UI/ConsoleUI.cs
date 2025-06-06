@@ -40,5 +40,30 @@ namespace Store_simulator.UI
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
         }
+
+        public static string ReadValidatedProductName(string prompt)
+{
+    string input;
+    do
+    {
+        input = ReadInput(prompt)?.Trim();
+
+        // Умова: лише літери та пробіли між словами
+        bool isValid = 
+            !string.IsNullOrWhiteSpace(input) &&
+            input.All(c => char.IsLetter(c) || c == ' ') &&
+            input.Split(' ', StringSplitOptions.RemoveEmptyEntries).Length > 0;
+
+        if (!isValid)
+        {
+            ShowMessage("Name must contain only letters and spaces. No digits, symbols, or empty input allowed.");
+            input = null;
+        }
+
+    } while (input == null);
+
+    return input;
+}
+
     }
 }

@@ -38,7 +38,7 @@ namespace Store_simulator.Data
 
         public override string ToString()
         {
-            return $"Order from {OrderDate}: Total {TotalAmount:C}, Items: {Products.Count}";
+            return $"Order from {OrderDate}: Total {TotalAmount:USD}, Items: {Products.Count}";
         }
 
         public void ChangeStatus(OrderStatus newStatus)

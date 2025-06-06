@@ -18,6 +18,7 @@ namespace Store_simulator.Core_Logic.Services
         }
         public void AddProduct(Product product)
         {
+
             _products.Add(product);
         }
 

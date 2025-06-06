@@ -154,10 +154,10 @@ namespace Store_simulator.Core_Logic.Services
                 Console.WriteLine("Products in order:");
                 foreach (var product in order.Products)
                 {
-                    Console.WriteLine($" - {product.Name} ({product.Category}): {product.Price:C} x {product.Quantity}");
+                    Console.WriteLine($" - {product.Name} ({product.Category}): {product.Price:USD} x {product.Quantity}");
                 }
 
-                Console.WriteLine($"Total: {order.TotalAmount:C}");
+                Console.WriteLine($"Total: {order.TotalAmount:USD}");
                 Console.WriteLine(new string('-', 40));
             }
         }

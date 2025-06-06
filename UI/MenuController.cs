@@ -30,7 +30,7 @@ namespace Store_simulator.Controllers
                 switch (choice)
                 {
                     case "1":
-                        string productName = ConsoleUI.ReadInput("Enter a Product Name");
+                        string productName = ConsoleUI.ReadValidatedProductName("Enter a Product Name");
 
                         decimal price;
                         while (!decimal.TryParse(ConsoleUI.ReadInput("Enter product price (>= 0):"), out price) || price < 0) ;
@@ -130,7 +130,6 @@ namespace Store_simulator.Controllers
                         {
                             store.CancelOrder(store.Orders[indexToCancel]);
                             store.SaveAll();
-                            ConsoleUI.ShowMessage("Order cancelled successfully.");
                         }
                         else
                         {
