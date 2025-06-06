@@ -1,40 +1,50 @@
-**Store Simulator**
+# Store Simulator
 
-Overview
-Store Simulator is a console-based C# application designed to manage products, customers, and orders in a simple retail environment. The project covers core programming concepts such as OOP, inheritance, interfaces, serialization, and user input validation.
+## Overview
 
-Features
--- Product management with validation (name, price, quantity, category)
--- Customer handling
--- Order processing with total calculation
--- Data persistence using JSON serialization
--- Robust input validation to prevent invalid data
--- Use of inheritance, interfaces, and abstract classes
--- Exception handling and user interaction via console
+**Store Simulator** is a simple console application designed as a learning project. It simulates the basic operations of a store, including managing products, customers, and orders. The main goal is to practice object-oriented programming concepts and essential C# features such as inheritance, interfaces, and file serialization.
 
+## Features
 
-Technologies
--- C# (.NET 8.0)
--- JSON serialization (System.Text.Json)
--- Console UI
+1. **Product Management**  
+   Add, update, and remove products with validation on names, prices, and quantities.
 
-Structure
-Models: Product, Customer, Order classes
-Interfaces: IStorageManager for data operations
-Implementations: StorageManager handles JSON file read/write
-UI Layer: ConsoleUI for input/output management
-Business Logic: Store class manages core app functionality
+2. **Customer Management**  
+   Store and manage customer information.
 
-How to Run
-1. Clone the repository
-2. Open the solution in Visual Studio
-3. Build and run the project in Debug mode
-4. Follow on-screen instructions to add products, customers, and create orders
+3. **Order Processing**  
+   Create and track orders, calculate totals, and manage order statuses.
 
-Future Improvements
--- Implement GUI for better user experience
--- Add database integration
--- Extend order management features
+4. **Data Persistence**  
+   Save and load data using JSON serialization to maintain state between program runs.
 
-Author
-Andrii Derkach
+5. **Object-Oriented Design**  
+   Utilizes classes, interfaces, inheritance, and encapsulation for clean and maintainable code.
+
+## Technologies Used
+
+- **C# 10 / .NET 8**  
+- Console Application  
+- JSON Serialization (System.Text.Json)  
+- Collections: List, Dictionary  
+- Interfaces and Abstract Classes  
+- Exception Handling and Input Validation
+
+## How to Run
+
+1. Open the solution in **Visual Studio 2022** or later.  
+2. Build the project to restore dependencies.  
+3. Run the program in **Debug** or **Release** mode.  
+4. Follow the console prompts to interact with the store simulation.
+
+## Notes
+
+- This project is an **MVP for learning purposes** and is not intended for production use.  
+- Future improvements may include a GUI, database integration, and more advanced features.
+
+---
+
+If you want, I can help з подальшим покращенням README, але цей варіант — повністю робочий і структурований для твого поточного рівня.
+  
+---
+
